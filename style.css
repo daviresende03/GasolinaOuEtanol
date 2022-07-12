@@ -1,0 +1,142 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(./Fontes/Montserrat-Regular.ttf)
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #949494;
+}
+
+main{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #949494;
+    flex-direction: row;
+}
+
+.coluna-1 img{
+    width: 200px;
+    height: 200px;
+}
+
+.coluna-2{
+    flex-direction: column;
+}
+
+.div-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(209, 206, 36);
+    align-items: center;
+    width: 500px;
+    height: 450px;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 6px rgb(77, 77, 77);
+}
+
+.div-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font: bold 2.5rem Montserrat;
+    margin-bottom: 30px;
+    border-bottom: 5px double black;
+}
+
+.div-input{
+    display: flex;
+    width: 300px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-input input{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: 0;
+    font: bold 1.1rem Montserrat;
+    text-align: center;
+}
+
+.div-input label{
+    font: bold 1.5rem Montserrat;
+}
+
+button{
+    width: 210px;
+    height: 40px;
+    font: bold 1.2rem Montserrat;
+    background: rgb(205, 205, 205);
+    color: rgb(0, 0, 0);
+    outline: none;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 1px #fff, 0 2px 3px rgb(87, 87, 87);
+    cursor: pointer;
+    position: relative;
+}
+
+button:hover{
+    box-shadow: inset 0 2px 5px #fff, 0 3px 3px;
+}
+
+button:active{
+    box-shadow: inset 0 2px 5px #fff, 0 1px 3px;
+    top: 2px;
+}
+
+#bt-analisar{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.div-resultado{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    height: 70px;
+    border-radius: 5px;
+    font: bold 1.5rem Montserrat;
+    box-shadow: 0px 0px 10px black;
+    background: rgb(157, 155, 25);
+    color: rgb(6, 5, 5);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.div-desenvolvido-por{
+    margin-top: 10px;
+    display: flex;
+    width: 500px;
+    font: bold 1.0rem Montserrat;
+    align-items: center;
+    text-align: right;
+    justify-content: right;
+}
+
+.div-desenvolvido-por a{
+    color: rgb(31, 26, 79);
+    width: 100px;
+}
